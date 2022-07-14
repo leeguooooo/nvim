@@ -31,6 +31,17 @@ brew install --cask font-hack-nerd-font
 brew install fd
 brew install ripgrep
 ```
+## 输入法问题
+```
+brew tap daipeihust/tap && brew install im-select
+OR
+curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
+```
+
+## python3 支持
+```
+pip3 install --upgrade pynvim
+```
 
 ## LSP 相关
 ```
@@ -38,7 +49,12 @@ npm install -g typescript-language-server
 ```
 
 ```
-:TSInstall css scss json html vue javascript typescript
+TSInstall css scss json html vue javascript typescript
+```
+
+## lazygit
+```
+brew install lazygit
 ```
 
 ## github AI 配置
@@ -51,5 +67,6 @@ npm install -g typescript-language-server
 ```
 brew install shfmt
 pip install black
-gem install rubocop
+sudo gem install rubocop
 ```
+
