@@ -45,3 +45,11 @@ npm install -g typescript-language-server
 ```
 :Copilot setup
 ```
+
+## 其他配置
+
+```
+brew install shfmt
+pip install black
+gem install rubocop
+```
