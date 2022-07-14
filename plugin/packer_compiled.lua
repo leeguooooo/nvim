@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
   },
+  ["leetcode.vim"] = {
+    loaded = true,
+    path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/leetcode.vim",
+    url = "https://github.com/ianding1/leetcode.vim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

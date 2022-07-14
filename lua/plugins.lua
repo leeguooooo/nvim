@@ -36,6 +36,8 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- leetcode
+		use("ianding1/leetcode.vim")
 		-- wakatime
 		use("wakatime/vim-wakatime")
 		-- github 补全

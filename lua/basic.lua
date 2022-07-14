@@ -81,3 +81,7 @@ vim.o.showtabline = 2
 vim.o.showmode = false
 -- 配置剪切板
 vim.opt.clipboard = "unnamedplus"
+-- leetcode 设置
+vim.g.leetcode_china = 0
+vim.g.leetcode_solution_filetype = "javascript"
+vim.g.leetcode_browser = "chrome"

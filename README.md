@@ -70,3 +70,8 @@ pip install black
 sudo gem install rubocop
 ```
 
+## leetcode 测试中
+```
+pip3 install keyring browser-cookie3 --user
+
+```
