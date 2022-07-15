@@ -36,8 +36,20 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- 正则
+		use({
+			"bennypowers/nvim-regexplainer",
+			config = function()
+				require("regexplainer").setup()
+			end,
+			requires = {
+				"nvim-treesitter/nvim-treesitter",
+				"MunifTanjim/nui.nvim",
+			},
+		})
+
 		-- leetcode
-		use("ianding1/leetcode.vim")
+		use("leeguooooo/leetcode.vim")
 		-- wakatime
 		use("wakatime/vim-wakatime")
 		-- github 补全
