@@ -129,6 +129,8 @@ packer.startup({
 		-- Rust 增强
 		use("simrat39/rust-tools.nvim")
 		--------------------- colorschemes --------------------
+		--  dracula
+		use("dracula/vim")
 		-- tokyonight
 		use("folke/tokyonight.nvim")
 		-- OceanicNext

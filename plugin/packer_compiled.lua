@@ -341,6 +341,11 @@ _G.packer_plugins = {
     path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  vim = {
+    loaded = true,
+    path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/vim",
+    url = "https://github.com/dracula/vim"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/vim-bbye",
@@ -364,14 +369,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\flazygit\19load_extension\14telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
 -- Config for: nvim-regexplainer
 time([[Config for nvim-regexplainer]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17regexplainer\frequire\0", "config", "nvim-regexplainer")
 time([[Config for nvim-regexplainer]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\flazygit\19load_extension\14telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
