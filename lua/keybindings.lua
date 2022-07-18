@@ -16,9 +16,6 @@ local opt = {
 
 -- 本地变量
 local map = vim.api.nvim_set_keymap
--- nvim-tree NvimTreeToggle
-map("n", "µ", ":NvimTreeToggle<CR>", opt)
-map("n", ";n", ":NvimTreeToggle<CR>", opt)
 
 -- $跳到行尾不带空格 (交换$ 和 g_)
 map("v", "$", "g_", opt)
@@ -135,7 +132,6 @@ map("n", "Z", ":foldopen<CR>", opt)
 
 -- nvim-tree
 map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
-map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = { -- 打开文件或文件夹
 	{ key = { "o", "<2-LeftMouse>" }, action = "edit" },
@@ -374,25 +370,25 @@ pluginKeys.cmp = function(cmp)
 		end, { "i", "s" }),
 
 		-- super Tab
-		["<Tab>"] = cmp.mapping(function(fallback)
-			if cmp.visible() then
-				cmp.select_next_item()
-			elseif vim.fn["vsnip#available"](1) == 1 then
-				feedkey("<Plug>(vsnip-expand-or-jump)", "")
-			elseif has_words_before() then
-				cmp.complete()
-			else
-				fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
-			end
-		end, { "i", "s" }),
-
-		["<S-Tab>"] = cmp.mapping(function()
-			if cmp.visible() then
-				cmp.select_prev_item()
-			elseif vim.fn["vsnip#jumpable"](-1) == 1 then
-				feedkey("<Plug>(vsnip-jump-prev)", "")
-			end
-		end, { "i", "s" }),
+		-- ["<Tab>"] = cmp.mapping(function(fallback)
+		-- 	if cmp.visible() then
+		-- 		cmp.select_next_item()
+		-- 	elseif vim.fn["vsnip#available"](1) == 1 then
+		-- 		feedkey("<Plug>(vsnip-expand-or-jump)", "")
+		-- 	elseif has_words_before() then
+		-- 		cmp.complete()
+		-- 	else
+		-- 		fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+		-- 	end
+		-- end, { "i", "s" }),
+		--
+		-- ["<S-Tab>"] = cmp.mapping(function()
+		-- 	if cmp.visible() then
+		-- 		cmp.select_prev_item()
+		-- 	elseif vim.fn["vsnip#jumpable"](-1) == 1 then
+		-- 		feedkey("<Plug>(vsnip-jump-prev)", "")
+		-- 	end
+		-- end, { "i", "s" }),
 		-- end of super Tab
 	}
 end
