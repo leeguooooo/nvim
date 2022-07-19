@@ -36,6 +36,11 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- code-action
+		require("packer").use({
+			"weilbith/nvim-code-action-menu",
+			cmd = "CodeActionMenu",
+		})
 		-- diffview
 		use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 		-- 正则

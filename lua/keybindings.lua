@@ -112,6 +112,10 @@ map("n", "st", ":sp | terminal<CR>", opt)
 map("n", "stv", ":vsp | terminal<CR>", opt)
 map("n", "stt", ":vsp | terminal<CR>", opt)
 
+-- code action
+map("n", "<leader>ca", ":CodeActionMenu<CR>", opt)
+map("n", ";ca", ":CodeActionMenu<CR>", opt)
+
 -- Esc 回 Normal 模式
 map("t", "<Esc>", "<C-\\><C-n>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)

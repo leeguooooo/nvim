@@ -85,3 +85,5 @@ vim.opt.clipboard = "unnamedplus"
 vim.g.leetcode_china = 1
 vim.g.leetcode_solution_filetype = "javascript"
 vim.g.leetcode_browser = "chrome"
+-- code action 样式
+vim.g.code_action_menu_window_border = "single"
