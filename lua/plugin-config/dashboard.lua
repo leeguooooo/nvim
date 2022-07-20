@@ -4,6 +4,13 @@ if not status then
 	return
 end
 
+local home = os.getenv("HOME")
+db.session_directory = home .. "/.cache/nvim/session"
+db.preview_command = "cat | lolcat -F 0.3"
+db.preview_file_path = home .. "/.config/nvim/static/leeguoo.cat"
+db.preview_file_height = 12
+db.preview_file_width = 80
+
 db.custom_footer = {
 	"",
 	"",
@@ -36,6 +43,19 @@ db.custom_center = {
 		desc = "Edit .zshrc                        ",
 		action = "edit ~/.zshrc",
 	},
+	-- {
+	-- 	icon = "  ",
+	-- 	desc = "Update Plugins                          ",
+	-- 	shortcut = "SPC p u",
+	-- 	action = "PackerUpdate",
+	-- },
+	-- {
+	-- 	icon = "  ",
+	-- 	desc = "Find  File                              ",
+	-- 	action = "Telescope find_files find_command=rg,--hidden,--files",
+	-- 	shortcut = "SPC f f",
+	-- },
+
 	-- {
 	-- 	icon = "  ",
 	-- 	desc = "Change colorscheme                  ",

@@ -36,6 +36,8 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- emmet
+		use("mattn/emmet-vim")
 		-- code-action
 		require("packer").use({
 			"weilbith/nvim-code-action-menu",

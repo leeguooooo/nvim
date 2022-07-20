@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/Users/zhihu/.local/share/nvim/site/pack/packer/start/fidget.nvim",
