@@ -36,6 +36,31 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- 快捷键
+		use({
+			"folke/which-key.nvim",
+			config = function()
+				require("which-key").setup({
+					-- your configuration comes here
+					-- or leave it empty to use the default settings
+					-- refer to the configuration section below
+				})
+			end,
+		})
+		-- todo
+		use({
+			"folke/todo-comments.nvim",
+			requires = "nvim-lua/plenary.nvim",
+			config = function()
+				require("todo-comments").setup({
+					-- your configuration comes here
+					-- or leave it empty to use the default settings
+					-- refer to the configuration section below
+				})
+			end,
+		})
+		-- 转驼峰
+		use("nicwest/vim-camelsnek")
 		-- mark 可视化
 		use("zakj/vim-showmarks")
 		-- trobuble
@@ -209,7 +234,7 @@ packer.startup({
 			-- default_url_format = "https://hub.fastgit.xyz/%s",
 			-- default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
 			-- default_url_format = "https://gitcode.net/mirrors/%s",
-			-- default_url_format = "https://gitclone.com/github.com/%s",
+			default_url_format = "https://gitclone.com/github.com/%s",
 		},
 		-- display = {
 		-- 使用浮动窗口显示
