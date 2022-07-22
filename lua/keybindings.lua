@@ -186,6 +186,12 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+map("n", ";o", ":Telescope oldfiles<CR>", opt)
+map("n", ";b", ":Telescope buffers<CR>", opt)
+map("n", ";m", ":Telescope marks<CR>", opt)
+map("n", ";f", ":Telescope current_buffer_fuzzy_find<CR>", opt)
+map("n", ";t", ":Telescope<CR>", opt)
+
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
 	i = {
