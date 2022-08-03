@@ -36,6 +36,8 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- 汉化
+		use("yianwillis/vimcdoc")
 		-- 快捷键
 		use({
 			"folke/which-key.nvim",
