@@ -17,6 +17,11 @@ local opt = {
 -- 本地变量
 local map = vim.api.nvim_set_keymap
 
+-- diffview 快捷键
+map("n", ";dvh", ":DiffviewFileHistory %<CR>", opt)
+map("n", ";dvc", ":DiffviewClose<CR>", opt)
+map("n", ";dvH", ":DiffviewFileHistory<CR>", opt)
+
 -- $跳到行尾不带空格 (交换$ 和 g_)
 map("v", "$", "g_", opt)
 map("v", "g_", "$", opt)
@@ -191,6 +196,7 @@ map("n", ";b", ":Telescope buffers<CR>", opt)
 map("n", ";m", ":Telescope marks<CR>", opt)
 map("n", ";f", ":Telescope current_buffer_fuzzy_find<CR>", opt)
 map("n", ";t", ":Telescope<CR>", opt)
+map("n", ";ds", ":Telescope git_status<CR>", opt)
 
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
