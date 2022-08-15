@@ -24,6 +24,7 @@ require("plugin-config.nvim-autopairs")
 require("plugin-config.fidget")
 require("plugin-config.gitsigns")
 require("plugin-config.regexplainer")
+require("plugin-config.dapVscodeJs")
 -- 内置LSP
 require("lsp.setup")
 require("lsp.cmp")

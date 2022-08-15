@@ -36,6 +36,16 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- markdow
+		use("davidgranstrom/nvim-markdown-preview")
+		-- debugger
+		use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } })
+
+		use({
+			"microsoft/vscode-js-debug",
+			opt = true,
+			run = "npm install --legacy-peer-deps && npm run compile",
+		})
 		-- 汉化
 		use("yianwillis/vimcdoc")
 		-- 快捷键

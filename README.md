@@ -75,3 +75,21 @@ sudo gem install rubocop
 pip3 install keyring browser-cookie3 --user
 
 ```
+
+## debugger
+
+```
+git clone https://github.com/microsoft/vscode-js-debug
+cd vscode-js-debug
+npm install --legacy-peer-deps
+npm run compile
+```
+
+## markdow preview
+
+```
+brew install pandoc
+
+npm install -g @compodoc/live-server
+
+```
