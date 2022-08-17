@@ -25,6 +25,7 @@ require("plugin-config.fidget")
 require("plugin-config.gitsigns")
 require("plugin-config.regexplainer")
 require("plugin-config.dapVscodeJs")
+require("plugin-config.ufo")
 -- 内置LSP
 require("lsp.setup")
 require("lsp.cmp")

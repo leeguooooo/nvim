@@ -36,6 +36,8 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- 代码折叠
+		use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 		-- markdow
 		use("davidgranstrom/nvim-markdown-preview")
 		-- debugger
@@ -74,7 +76,7 @@ packer.startup({
 		-- 转驼峰
 		use("nicwest/vim-camelsnek")
 		-- mark 可视化
-		use("zakj/vim-showmarks")
+		-- use("zakj/vim-showmarks")
 		-- trobuble
 		use({
 			"folke/trouble.nvim",
