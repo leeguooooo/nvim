@@ -36,6 +36,15 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+		-- 快速移动
+		use({
+			"phaazon/hop.nvim",
+			branch = "v2", -- optional but strongly recommended
+			config = function()
+				-- you can configure Hop the way you like here; see :h hop-config
+				require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+			end,
+		})
 		-- 代码折叠
 		use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 		-- markdow

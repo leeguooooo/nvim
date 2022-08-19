@@ -17,6 +17,37 @@ local opt = {
 -- 本地变量
 local map = vim.api.nvim_set_keymap
 
+-- 快速移动
+-- place this in one of your configuration file(s)
+-- vim.api.nvim_set_keymap(
+-- 	"",
+-- 	"f",
+-- 	"<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>",
+-- 	{}
+-- )
+-- vim.api.nvim_set_keymap(
+-- 	"",
+-- 	"F",
+-- 	"<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>",
+-- 	{}
+-- )
+-- vim.api.nvim_set_keymap(
+-- 	"",
+-- 	"t",
+-- 	"<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<cr>",
+-- 	{}
+-- )
+-- vim.api.nvim_set_keymap(
+-- 	"",
+-- 	"T",
+-- 	"<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>",
+-- 	{}
+-- )
+map("n", "ff", ":HopWord<CR>", opt)
+map("n", "fa", ":HopWordAC<CR>", opt)
+map("n", "fb", ":HopWordBC<CR>", opt)
+map("n", "fl", ":HopLine<CR>", opt)
+
 -- diffview 快捷键
 map("n", ";dvh", ":DiffviewFileHistory %<CR>", opt)
 map("n", ";dvc", ":DiffviewClose<CR>", opt)
@@ -190,6 +221,7 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
+map("n", ";dp", ":Telescope find_files<CR>", opt)
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 map("n", ";o", ":Telescope oldfiles<CR>", opt)
 map("n", ";b", ":Telescope buffers<CR>", opt)
