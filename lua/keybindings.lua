@@ -52,6 +52,7 @@ map("n", "fl", ":HopLine<CR>", opt)
 map("n", ";dvh", ":DiffviewFileHistory %<CR>", opt)
 map("n", ";dvc", ":DiffviewClose<CR>", opt)
 map("n", ";dvH", ":DiffviewFileHistory<CR>", opt)
+map("n", ";dvo", ":DiffviewOpen<CR>", opt)
 
 -- $跳到行尾不带空格 (交换$ 和 g_)
 map("v", "$", "g_", opt)
