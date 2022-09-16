@@ -85,6 +85,9 @@ npm install --legacy-peer-deps
 npm run compile
 ```
 
+
+https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#Javascript
+
 ## markdow preview
 
 ```

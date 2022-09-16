@@ -43,10 +43,10 @@ local map = vim.api.nvim_set_keymap
 -- 	"<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>",
 -- 	{}
 -- )
-map("n", "ff", ":HopWord<CR>", opt)
-map("n", "fa", ":HopWordAC<CR>", opt)
-map("n", "fb", ":HopWordBC<CR>", opt)
-map("n", "fl", ":HopLine<CR>", opt)
+map("n", "Ff", ":HopWord<CR>", opt)
+map("n", "Fa", ":HopWordAC<CR>", opt)
+map("n", "Fb", ":HopWordBC<CR>", opt)
+map("n", "Fl", ":HopLine<CR>", opt)
 
 -- diffview 快捷键
 map("n", ";dvh", ":DiffviewFileHistory %<CR>", opt)
@@ -95,7 +95,8 @@ map("v", "K", ":move '<-2<CR>gv-gv", opt)
 map("v", "p", '"_dP', opt)
 
 -- 退出
-map("n", "q", ":q<CR>", opt)
+map("n", ";q", ":q<CR>", opt)
+-- map("n", "q", ":q<CR>", opt)
 map("n", "qq", ":q!<CR>", opt)
 map("n", "Q", ":qa!<CR>", opt)
 map("n", "<leader>q", ":qa!<CR>", opt)

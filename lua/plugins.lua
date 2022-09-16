@@ -52,13 +52,13 @@ packer.startup({
 		-- debugger
 		use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } })
 
-		use({
-			"microsoft/vscode-js-debug",
-			opt = true,
-			run = "npm install --legacy-peer-deps && npm run compile",
-		})
+		-- use({
+		-- 	"microsoft/vscode-js-debug",
+		-- 	opt = true,
+		-- 	run = "npm install --legacy-peer-deps && npm run compile",
+		-- })
 		-- 汉化
-		use("yianwillis/vimcdoc")
+		-- use("yianwillis/vimcdoc")
 		-- 快捷键
 		use({
 			"folke/which-key.nvim",

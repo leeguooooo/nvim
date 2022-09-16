@@ -24,7 +24,7 @@ require("plugin-config.nvim-autopairs")
 require("plugin-config.fidget")
 require("plugin-config.gitsigns")
 require("plugin-config.regexplainer")
-require("plugin-config.dapVscodeJs")
+-- require("plugin-config.dapVscodeJs")
 require("plugin-config.ufo")
 -- 内置LSP
 require("lsp.setup")
@@ -34,8 +34,8 @@ require("lsp.ui")
 -- require("lsp.formatter")
 require("lsp.null-ls")
 -- DAP
--- require("dap.vimspector")
-require("dap.nvim-dap")
+require("dap.vimspector")
+-- require("dap.nvim-dap")
 -- utils
 -- 复制到windows剪贴板
 -- require('utils.fix-yank')
