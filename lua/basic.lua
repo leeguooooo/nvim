@@ -1,3 +1,5 @@
+-- js alias find package max levels
+vim.g.vim_npr_max_levels = 10
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "utf-8"
@@ -87,3 +89,6 @@ vim.g.leetcode_solution_filetype = "javascript"
 vim.g.leetcode_browser = "chrome"
 -- code action 样式
 vim.g.code_action_menu_window_border = "single"
+
+-- vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+-- vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})

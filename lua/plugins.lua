@@ -36,6 +36,61 @@ packer.startup({
 		-- Packer 可以升级自己
 		use("wbthomason/packer.nvim")
 		-------------------------- plugins -------------------------------------------
+
+		-- 新的缩进线
+		use({ "shellRaining/hlchunk.nvim" })
+		-- markdown
+
+		use({
+			"ellisonleao/glow.nvim",
+			config = function()
+				require("glow").setup({
+					width = 120,
+				})
+			end,
+		})
+		-- use({ "toppair/peek.nvim", run = "deno task --quiet build:fast" })
+
+		-- use({
+		-- 	"nvim-neorg/neorg",
+		-- 	config = function()
+		-- 		require("neorg").setup({
+		-- 			load = {
+		-- 				["core.defaults"] = {}, -- Loads default behaviour
+		-- 				["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
+		-- 				["core.norg.dirman"] = { -- Manages Neorg workspaces
+		-- 					config = {
+		-- 						workspaces = {
+		-- 							notes = "~/notes",
+		-- 						},
+		-- 					},
+		-- 				},
+		-- 			},
+		-- 		})
+		-- 	end,
+		-- 	run = ":Neorg sync-parsers",
+		-- 	requires = "nvim-lua/plenary.nvim",
+		-- })
+		-- chatgpt
+		use({
+			"terror/chatgpt.nvim",
+			run = "pip3 install -r requirements.txt",
+		})
+		-- use({
+		--   "jackMort/ChatGPT.nvim",
+		--     config = function()
+		--       require("chatgpt").setup({
+		--         -- optional configuration
+		--       })
+		--     end,
+		--     requires = {
+		--       "MunifTanjim/nui.nvim",
+		--       "nvim-lua/plenary.nvim",
+		--       "nvim-telescope/telescope.nvim"
+		--     }
+		-- })
+		-- js 路径 alias 跳转
+		use("tomarrell/vim-npr")
 		-- 快速移动
 		use({
 			"phaazon/hop.nvim",
@@ -157,6 +212,16 @@ packer.startup({
 		use("nvim-telescope/telescope-ui-select.nvim")
 		-- dashboard-nvim
 		use("glepnir/dashboard-nvim")
+		-- use({
+		-- 	"glepnir/dashboard-nvim",
+		-- 	event = "VimEnter",
+		-- 	config = function()
+		-- 		require("dashboard").setup({
+		-- 			-- config
+		-- 		})
+		-- 	end,
+		-- 	requires = { "nvim-tree/nvim-web-devicons" },
+		-- })
 		-- project
 		use("ahmedkhalf/project.nvim")
 		-- treesitter
@@ -164,7 +229,7 @@ packer.startup({
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",
 		})
-		use("p00f/nvim-ts-rainbow")
+		-- use("p00f/nvim-ts-rainbow")
 		-- indent-blankline
 		use("lukas-reineke/indent-blankline.nvim")
 		--------------------- LSP --------------------
@@ -194,12 +259,14 @@ packer.startup({
 		-- TypeScript 增强
 		use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
 		-- Lua 增强
-		use("folke/lua-dev.nvim")
+		-- use("folke/neodev.nvim")
 		-- JSON 增强
 		use("b0o/schemastore.nvim")
 		-- Rust 增强
 		use("simrat39/rust-tools.nvim")
 		--------------------- colorschemes --------------------
+		-- vscode
+		use("Mofiqul/vscode.nvim")
 		--  dracula
 		use("dracula/vim")
 		-- tokyonight

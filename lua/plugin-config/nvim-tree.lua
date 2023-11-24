@@ -26,7 +26,7 @@ nvim_tree.setup({
 		-- 隐藏 .文件
 		dotfiles = true,
 		-- 隐藏 node_modules 文件夹
-		custom = { "node_modules" },
+		-- custom = { "node_modules" },
 	},
 	view = {
 		-- 宽度
@@ -34,13 +34,13 @@ nvim_tree.setup({
 		-- 也可以 'right'
 		side = "left",
 		-- 隐藏根目录
-		hide_root_folder = false,
+		-- hide_root_folder = false,
 		-- 自定义列表中快捷键
-		mappings = {
-			-- 只用内置快捷键
-			custom_only = true,
-			list = list_keys,
-		},
+		-- mappings = {
+		-- 	-- 只用内置快捷键
+		-- 	custom_only = true,
+		-- 	list = list_keys,
+		-- },
 		-- 不显示行数
 		number = false,
 		relativenumber = false,
@@ -52,7 +52,7 @@ nvim_tree.setup({
 			-- 首次打开大小适配
 			resize_window = true,
 			-- 打开文件时关闭 tree
-			quit_on_open = true,
+			quit_on_open = false,
 		},
 	},
 	-- wsl install -g wsl-open

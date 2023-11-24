@@ -16,7 +16,10 @@ require("plugin-config.telescope")
 require("plugin-config.dashboard")
 require("plugin-config.project")
 require("plugin-config.nvim-treesitter")
-require("plugin-config.indent-blankline")
+-- 旧版的缩进线
+-- require("plugin-config.indent-blankline")
+-- 新版的缩进线
+require("plugin-config.hlchunk")
 require("plugin-config.toggleterm")
 require("plugin-config.surround")
 require("plugin-config.comment")
@@ -39,3 +42,9 @@ require("dap.nvim-dap")
 -- utils
 -- 复制到windows剪贴板
 -- require('utils.fix-yank')
+
+-- chatgpt
+-- require("chatgpt")
+
+-- markdown
+-- require("plugin-config.peek")

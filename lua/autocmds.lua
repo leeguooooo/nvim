@@ -36,8 +36,13 @@ autocmd("TermOpen", {
 autocmd("BufWritePre", {
 	group = myAutoGroup,
 	pattern = { "*.lua", "*.py", "*.sh", "*.tsx", "*.jsx", "*.ts", "*.js", "*.xml" },
-	callback = vim.lsp.buf.formatting_sync,
+	-- callback = vim.lsp.buf.formatting_sync,
+	callback = function()
+		vim.lsp.buf.format({ timeout_ms = 2000 })  -- timeout_ms 是可选的
+	end
 })
+
+
 
 -- 修改lua/plugins.lua 自动更新插件
 autocmd("BufWritePost", {

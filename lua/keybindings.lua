@@ -43,7 +43,7 @@ local map = vim.api.nvim_set_keymap
 -- 	"<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>",
 -- 	{}
 -- )
-map("n", "Ff", ":HopWord<CR>", opt)
+map("n", "FF", ":HopWord<CR>", opt)
 map("n", "Fa", ":HopWordAC<CR>", opt)
 map("n", "Fb", ":HopWordBC<CR>", opt)
 map("n", "Fl", ":HopLine<CR>", opt)
@@ -98,7 +98,7 @@ map("v", "p", '"_dP', opt)
 map("n", ";q", ":q<CR>", opt)
 -- map("n", "q", ":q<CR>", opt)
 map("n", "qq", ":q!<CR>", opt)
-map("n", "Q", ":qa!<CR>", opt)
+map("n", "q", ":qa!<CR>", opt)
 map("n", "<leader>q", ":qa!<CR>", opt)
 
 -- insert 模式下，跳到行首行尾

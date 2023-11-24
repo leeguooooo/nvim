@@ -96,3 +96,8 @@ brew install pandoc
 npm install -g @compodoc/live-server
 
 ```
+
+### vtsls 替代 tsserver
+```
+npm install -g @vtsls/language-server
+```
