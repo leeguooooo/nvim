@@ -32,6 +32,7 @@ brew install fd
 brew install ripgrep
 ```
 ## 输入法问题
+> 不再需要内置输入法,使用 `brew install --cask input-source-pro` 代替
 ```
 brew tap daipeihust/tap && brew install im-select
 OR
